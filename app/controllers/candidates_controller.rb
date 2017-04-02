@@ -1,4 +1,5 @@
 class CandidatesController < ApplicationController
+    layout "backend"
     before_action :find_candidate, only: [:edit, :update, :destroy, :vote]
 
     def index
